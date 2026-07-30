@@ -1,14 +1,17 @@
 import React, { useEffect, useRef } from "react";
 
 const images = [
-  { id: 0, src: "/stars/pic.jpg", alt: "Star Pic" },
-  { id: 1, src: "/stars/pic1.jpg", alt: "Star Pic 1" },
-  { id: 2, src: "/stars/pic2.jpg", alt: "Star Pic 2" },
-  { id: 3, src: "/stars/pic3.jpg", alt: "Star Pic 3" },
-  { id: 4, src: "/stars/pic4.jpg", alt: "Star Pic 4" },
-  { id: 5, src: "/stars/pic5.jpg", alt: "Star Pic 5" },
-  { id: 6, src: "/stars/pic6.jpg", alt: "Star Pic 6" },
-  { id: 7, src: "/stars/pic7.jpg", alt: "Star Pic 7" },
+  { id: 0, src: "./stars/pic.jpg", alt: "Star Pic" },
+  { id: 1, src: "./stars/pic1.jpg", alt: "Star Pic 1" },
+  { id: 2, src: "./stars/pic2.jpg", alt: "Star Pic 2" },
+  { id: 3, src: "./stars/pic3.jpg", alt: "Star Pic 3" },
+  { id: 4, src: "./stars/pic4.jpg", alt: "Star Pic 4" },
+  { id: 5, src: "./stars/pic5.jpg", alt: "Star Pic 5" },
+  { id: 6, src: "./stars/pic6.jpg", alt: "Star Pic 6" },
+  { id: 7, src: "./stars/pic7.jpg", alt: "Star Pic 7" },
+  { id: 8, src: "./stars/pic8.jpg", alt: "Star Pic 8" },
+  { id: 9, src: "./stars/pic9.jpg", alt: "Star Pic 9" },
+  { id: 10, src: "./stars/pic10.jpg", alt: "Star Pic 10" },
 ];
 
 export default function StarCarousel() {
