@@ -12,7 +12,7 @@ const images = [
   { id: 8, src: "./stars/pic8.jpg", alt: "Star Pic 8" },
   { id: 9, src: "./stars/pic9.jpg", alt: "Star Pic 9" },
   { id: 10, src: "./stars/pic10.jpg", alt: "Star Pic 10" },
-  { id: 11, src: "./stars/pic11.jpg", alt: "Star Pic 11" }
+  { id: 11, src: "./stars/pic11.webp", alt: "Star Pic 11" }
 ];
 
 export default function StarCarousel() {

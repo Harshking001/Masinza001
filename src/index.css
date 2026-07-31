@@ -188,6 +188,7 @@ header {
     background: var(--primary-color);
     color: var(--text-light);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 20px 0;
 
     .stats-grid {
         display: grid;
