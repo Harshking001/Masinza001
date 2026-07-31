@@ -9,6 +9,7 @@ import Coaches from './components/Coaches.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import View from './components/View.jsx'
+import Mission from './components/Mission.jsx'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <Highlights />
       <Blog />
       <Coaches />
+      <Mission />
       <Contact />
       <Footer />
     </>

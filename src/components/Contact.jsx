@@ -1,53 +1,93 @@
-import { useState } from 'react'
-import AnimateOnScroll from './AnimateOnScroll.jsx'
+import { useState } from "react";
+import AnimateOnScroll from "./AnimateOnScroll.jsx";
 
 const PROGRAM_OPTIONS = [
-  'Grassroots (Ages 6-10)',
-  'Youth Development (Ages 11-15)',
-  'Elite Pro Pathway (Ages 16+)',
-  'General Inquiry',
-]
+  "Grassroots (Ages 6-10)",
+  "Youth Development (Ages 11-15)",
+  "Elite Pro Pathway (Ages 16+)",
+  "General Inquiry",
+];
+
+const RECEIVER_EMAIL = "ekey6343@gmail.com";
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', program: '', message: '' })
+  const [form, setForm] = useState({
+    name: "",
+    program: "",
+    message: "",
+  });
 
   function handleChange(event) {
-    const { name, value } = event.target
-    setForm((prev) => ({ ...prev, [name]: value }))
+    const { name, value } = event.target;
+
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   }
 
   function handleSubmit(event) {
-    event.preventDefault()
-    alert('Message sent successfully!')
-    setForm({ name: '', email: '', program: '', message: '' })
+    event.preventDefault();
+
+    const subject = encodeURIComponent(
+      `New Contact Form - ${form.program}`
+    );
+
+    const body = encodeURIComponent(
+`Name: ${form.name}
+
+Program: ${form.program}
+
+Message:
+${form.message}`
+    );
+
+    window.location.href = `mailto:${RECEIVER_EMAIL}?subject=${subject}&body=${body}`;
+
+    setForm({
+      name: "",
+      program: "",
+      message: "",
+    });
   }
 
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <AnimateOnScroll as="h2">Get In Touch</AnimateOnScroll>
+        <AnimateOnScroll as="h2">
+          Get In Touch
+        </AnimateOnScroll>
+
         <div className="contact-wrapper">
           <AnimateOnScroll as="div" className="contact-info">
             <h3>Contact Stars Academy</h3>
+
             <p>
-              Have questions about trial sessions, schedules, or academy locations in
-              Nairobi? Send us a message!
+              Have questions about trial sessions, schedules, or academy
+              locations in Nairobi? We'd love to hear from you.
             </p>
+
             <div className="info-item">
               <i className="fa-solid fa-location-dot"></i>
-              <span>Nairobi Sports Grounds, Nairobi, Kenya</span>
+              <span>Kizito Colledge, Nairobi, Kenya</span>
             </div>
+
             <div className="info-item">
               <i className="fa-solid fa-envelope"></i>
-              <span>info@starsfootballacademy.com</span>
+              <span>{RECEIVER_EMAIL}</span>
             </div>
+
             <div className="info-item">
               <i className="fa-solid fa-phone"></i>
-              <span>+254 700 000 000</span>
+              <a href="tel:+254 700 000 000">+254 700 000 000</a>
             </div>
           </AnimateOnScroll>
 
-          <AnimateOnScroll as="form" className="contact-form" onSubmit={handleSubmit}>
+          <AnimateOnScroll
+            as="form"
+            className="contact-form"
+            onSubmit={handleSubmit}
+          >
             <div className="form-group">
               <input
                 type="text"
@@ -58,21 +98,18 @@ export default function Contact() {
                 required
               />
             </div>
+
             <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                value={form.email}
+              <select
+                name="program"
+                value={form.program}
                 onChange={handleChange}
                 required
-              />
-            </div>
-            <div className="form-group">
-              <select name="program" value={form.program} onChange={handleChange} required>
+              >
                 <option value="" disabled>
                   Select Program Category
                 </option>
+
                 {PROGRAM_OPTIONS.map((option) => (
                   <option key={option} value={option}>
                     {option}
@@ -80,16 +117,18 @@ export default function Contact() {
                 ))}
               </select>
             </div>
+
             <div className="form-group">
               <textarea
                 name="message"
-                placeholder="Your Message..."
-                rows="4"
+                rows="5"
+                placeholder="Write your message..."
                 value={form.message}
                 onChange={handleChange}
                 required
-              ></textarea>
+              />
             </div>
+
             <button type="submit" className="btn-submit">
               Send Message
             </button>
@@ -97,5 +136,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

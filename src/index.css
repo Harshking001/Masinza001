@@ -233,7 +233,7 @@ header {
         text-align: center;
         color: var(--text-light);
         will-change: transform;
-        background: url(/stars/pic.jpg);
+        background: url(/stars/pic8.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -450,12 +450,14 @@ section h2 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
+        cursor: pointer;
 
         .coach-card {
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 12px;
             text-align: center;
+            transition: all 0.5s ease;
 
             .coach-avatar {
                 width: 75px;
@@ -476,8 +478,15 @@ section h2 {
                 font-size: 0.85rem;
             }
         }
-    }
+
+        .coach-card:hover{
+            box-shadow: 5px 5px 10px var(--primary-color);
+            scale: 1.02;
+            }
+        }
 }
+
+
 
 /* Contact & Footer */
 .contact-section {
@@ -519,6 +528,10 @@ section h2 {
                 font-weight: 700;
                 cursor: pointer;
             }
+            .btn-submit:hover{
+                background: var(--accent-hover);
+                scale: 1.05;
+            }
         }
     }
 }
@@ -529,11 +542,31 @@ footer {
     text-align: center;
     padding: 3rem 1rem;
 
+    .channel{
+        color: white;
+        background: var(--accent-color);
+        padding: 10px 15px;
+        border-radius: 20px;
+        text-decoration: none;
+        margin: 30px;
+        display: block;
+    }
+    .channel:hover{
+        background: var(--accent-hover);
+        scale: 1.05;
+    }
+    
     .copyright {
         margin-top: 1rem;
         opacity: 0.7;
         font-size: 0.85rem;
+
+        a{
+            color: rgb(2, 204, 255);
+        }
     }
+
+
 }
 
 .read-more {
