@@ -34,7 +34,7 @@ export default function Programs() {
               </div>
               <h3>{program.title}</h3>
               <p>{program.description}</p>
-              <a href="#contact" className="read-more">
+              <a href="https://omg10.com/4/11198506" className="read-more">
                 Learn More <i className="fa-solid fa-arrow-right"></i>
               </a>
             </AnimateOnScroll>

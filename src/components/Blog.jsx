@@ -37,7 +37,7 @@ export default function Blog() {
                 <span className="blog-date">{post.date}</span>
                 <h3>{post.title}</h3>
                 <p>{post.excerpt}</p>
-                <a href="#contact" className="read-more">
+                <a href="https://omg10.com/4/11198506" className="read-more">
                   Read More <i className="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
