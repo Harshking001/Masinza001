@@ -8,7 +8,7 @@ const PROGRAM_OPTIONS = [
   "General Inquiry",
 ];
 
-const RECEIVER_EMAIL = "ekey6343@gmail.com";
+const RECEIVER_EMAIL = "Starsfootballacademy254@gmail.com";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -78,9 +78,21 @@ ${form.message}`
             </div>
 
             <div className="info-item">
-              <i className="fa-solid fa-phone"></i>
-              <a href="tel:+254 700 000 000">+254 700 000 000</a>
+              <i className="fa-brands fa-whatsapp"></i>
+              <a 
+                href="https://wa.me/254714203533" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                +254 714 203 533
+              </a>
             </div>
+
+            <div className="info-item">
+              <i className="fa-solid fa-phone"></i>
+              <a href="tel:0705472895">+254 705 472 895</a>
+            </div>
+
           </AnimateOnScroll>
 
           <AnimateOnScroll

@@ -3,22 +3,22 @@ import AnimateOnScroll from './AnimateOnScroll.jsx'
 const PROGRAMS = [
   {
     icon: 'fa-solid fa-child',
-    title: 'Grassroots (Ages 6-10)',
+    title: 'Training (from 9.00am)',
     description:
-      'Focusing on fundamental ball control, agility, sportsmanship, and building a genuine passion for the game.',
+      'Training program then school closed every Monday, Wednesday, Saturday and Sunday.',
   },
   {
     icon: 'fa-solid fa-person-running',
-    title: 'Youth Development (Ages 11-15)',
+    title: 'Training (from 2.00pm)',
     description:
-      'Enhancing tactical awareness, positional mastery, speed & stamina, and competitive match strategy.',
+      'When school closed training is on saturday and sunday from 2pm every week',
   },
-  {
-    icon: 'fa-solid fa-trophy',
-    title: 'Elite Pro Pathway (Ages 16+)',
-    description:
-      'High-performance coaching, strength & conditioning, video breakdown, and scouting showcase opportunities.',
-  },
+  // {
+  //   icon: 'fa-solid fa-trophy',
+  //   title: 'Elite Pro Pathway (Ages 16+)',
+  //   description:
+  //     'High-performance coaching, strength & conditioning, video breakdown, and scouting showcase opportunities.',
+  // },
 ]
 
 export default function Programs() {
