@@ -218,7 +218,7 @@ const MissionSection = () => {
             <div className="mission-grid">
 
               <div className="mission-card">
-                <div className="icon">🚀</div>
+                <div className="icon"><i className="fa-solid fa-rocket"></i></div>
                 <div>
                   <h3>Innovation</h3>
                   <p>
@@ -229,7 +229,7 @@ const MissionSection = () => {
               </div>
 
               <div className="mission-card">
-                <div className="icon">🤝</div>
+                <div className="icon"><i className="fa-solid fa-handshake"></i></div>
                 <div>
                   <h3>Collaboration</h3>
                   <p>
@@ -241,7 +241,7 @@ const MissionSection = () => {
               </div>
 
               <div className="mission-card">
-                <div className="icon">📈</div>
+                <div className="icon"><i className="fa-solid fa-chart-line"></i></div>
                 <div>
                   <h3>Continuous Growth</h3>
                   <p>

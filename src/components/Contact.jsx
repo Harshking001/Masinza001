@@ -69,7 +69,7 @@ ${form.message}`
 
             <div className="info-item">
               <i className="fa-solid fa-location-dot"></i>
-              <span>Kizito Colledge, Nairobi, Kenya</span>
+              <span>Wendani astro turf , Nairobi, Kenya</span>
             </div>
 
             <div className="info-item">

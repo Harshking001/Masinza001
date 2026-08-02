@@ -2,22 +2,34 @@ import AnimateOnScroll from './AnimateOnScroll.jsx'
 
 const COACHES = [
   {
-    icon: 'fa-solid fa-user-ninja',
-    name: 'Coach Alex Vance',
-    role: 'Head Technical Director',
-    bio: '12+ years of professional youth development and tactical training experience.',
+    icon: "fa-solid fa-user-tie",
+    name: 'Coach Starcus Matiku',
+    role: 'Head Coach',
+    bio: 'A passionate football coach dedicated to developing players, promoting teamwork, discipline, and continuous improvement both on and off the field.',
   },
   {
-    icon: 'fa-solid fa-user-shield',
-    name: 'Coach Marcus Silva',
-    role: 'Conditioning & Tactics',
-    bio: 'Former professional player specializing in endurance, agility, and match strategy.',
+    icon: "fa-solid fa-chalkboard-user",
+    name: 'Coach Francine Odoi',
+    role: 'Team Manager',
+    bio: 'An organized and dedicated team manager responsible for supporting players and coaches, coordinating team operations, and ensuring everything runs smoothly on and off the field.',
   },
   {
-    icon: 'fa-solid fa-hands-holding',
-    name: 'Coach Sarah Jenkins',
-    role: 'Goalkeeping Specialist',
-    bio: 'Dedicated to reflex optimization, positioning, and mental agility for goalies.',
+    icon: "fa-solid fa-futbol",
+    name: 'Coach Njinu',
+    role: 'u13',
+    bio: 'Committed to nurturing young talent by building strong football fundamentals, confidence, teamwork, and a love for the game.',
+  },
+  {
+    icon: "fa-solid fa-child-reaching",
+    name: 'Coach Sam',
+    role: 'u09',
+    bio: 'Focused on introducing young players to football through fun, skill development, discipline, and positive sportsmanship.',
+  },
+  {
+    icon:  "fa-solid fa-user",
+    name: 'Coach Zacky',
+    role: 'u11',
+    bio: 'Dedicated to helping young athletes develop their technical skills, teamwork, and confidence while enjoying the game.',
   },
 ]
 
