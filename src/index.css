@@ -234,7 +234,7 @@ header {
         text-align: center;
         color: var(--text-light);
         will-change: transform;
-        background: url(/stars/pic8.jpg);
+        background: url('/stars/pic (8).jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

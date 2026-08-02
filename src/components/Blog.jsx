@@ -2,10 +2,10 @@ import AnimateOnScroll from './AnimateOnScroll.jsx'
 
 const POSTS = [
   {
-    date: 'July 29, 2026',
-    title: 'Summer Training Camp Kickoff',
+    date: 'August 8, 2026',
+    title: 'Stars Going for County Chapa Dimba',
     excerpt:
-      'Our annual summer intensive training camp in Nairobi has officially started. Players are working on agility, ball control, and tactical discipline.',
+      'Ready. Focused. United. 💪🏆The countdown is on! Our team is putting in the work, staying disciplined, and preparing to give it everything on the field. Every practice, every challenge, and every moment brings us one step closer to the tournament.We\'re not just playing for victory—we\'re playing for each other. See you at the tournament. Let\'s make every moment count! 🔥 #OneTeam #GameOn #RoadToVictory',
     imageClass: 'placeholder-img-1',
   },
   {

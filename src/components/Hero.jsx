@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="hero-glow"></div>
       <div className="hero-content fade-in-up">
         <div className="location-badge">
-          <i className="fa-solid fa-location-dot"></i>  Kizito Colledge ,Nairobi,Kenya 
+          <i className="fa-solid fa-location-dot"></i>  wendani astro turf ,Nairobi,Kenya 
         </div>
         <h1>Stars Football Academy</h1>
         <p>Building Future Legends On and Off the Pitch</p>
