@@ -1,4 +1,14 @@
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+
 export default function Hero() {
+  useGSAP(() => {
+    gsap.from('.hero-btns',{
+      y: 100,
+      scale: 0.5,
+      ease: 'elastic'
+    })
+  },[])
   return (
     <header id="hero">
       <div className="hero-glow"></div>
